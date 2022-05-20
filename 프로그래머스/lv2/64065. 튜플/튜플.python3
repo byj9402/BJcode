@@ -1,0 +1,15 @@
+def solution(s):
+    tuple = []
+    answer = []
+    line = list(map(str, s[2:-2].split('},{')))
+    line.sort(key = lambda x : len(x))
+    
+    for i in range(len(line)) :
+        tuple.append(list(map(int, line[i].split(','))))
+        
+    for i in range(len(tuple)) :
+        for j in range(len(tuple[i])) :
+            if int(tuple[i][j]) not in answer :
+                answer.append(int(tuple[i][j]))
+                
+    return answer
