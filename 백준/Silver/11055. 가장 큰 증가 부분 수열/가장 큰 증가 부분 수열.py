@@ -7,7 +7,7 @@ result = [0] * N
 
 for i in range(N) :
     for j in range(i) :
-        if num[i] > num[j] and result[i] <= result[j] :
+        if num[i] > num[j] and result[i] < result[j] :
             result[i] = result[j]
     result[i] += num[i]
 
