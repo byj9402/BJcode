@@ -1,1 +1,1 @@
-def solve(a): return int(sum(a))
+def solve(a): return sum(a)
