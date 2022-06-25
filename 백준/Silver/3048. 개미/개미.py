@@ -1,19 +1,17 @@
 import sys
+input = sys.stdin.readline
 
-n1, n2 = map(int, sys.stdin.readline().split())
-
-ant1 = list(map(str,sys.stdin.readline().rstrip("\n")))
-ant2 = list(map(str,sys.stdin.readline().rstrip("\n")))
-T = int(sys.stdin.readline())
+N1, N2 = map(int, input().split())
+ant1 = (list(map(str, input().strip())))
+ant2 = list(map(str, input().strip()))
 
 ant1.reverse()
-totalAnt = ant1 + ant2
+load = ant1 + ant2
 
-for _ in range(T):
-    for i in range(len(totalAnt) - 1):
-        if totalAnt[i] in ant1 and totalAnt[i + 1] in ant2:
-            totalAnt[i], totalAnt[i + 1] = totalAnt[i + 1], totalAnt[i]
-            if totalAnt[i + 1] == ant1[-1]:
-                break
+for _ in range(int(input())) :
+    for i in range(len(load) - 1) :
+        if load[i] in ant1 and load[i + 1] in ant2 :
+            load[i], load[i + 1] = load[i + 1], load[i]
+            if load[i + 1] == ant1[-1] : break
 
-print("".join(totalAnt))
+print("".join(load))
