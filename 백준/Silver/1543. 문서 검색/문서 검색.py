@@ -1,5 +1,8 @@
-text = input()
-word = input()
+import sys
+input = sys.stdin.readline
+
+text = input().strip()
+word = input().strip()
 
 stack = []
 count = 0
