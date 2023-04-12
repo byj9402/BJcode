@@ -1,14 +1,14 @@
-# [Silver V] 30 - 10610 
+# [Silver IV] 30 - 10610 
 
 [문제 링크](https://www.acmicpc.net/problem/10610) 
 
 ### 성능 요약
 
-메모리: 31620 KB, 시간: 160 ms
+메모리: 32388 KB, 시간: 144 ms
 
 ### 분류
 
-그리디 알고리즘(greedy), 수학(math), 정수론(number_theory), 정렬(sorting), 문자열(string)
+수학, 문자열, 그리디 알고리즘, 정렬, 정수론
 
 ### 문제 설명
 
