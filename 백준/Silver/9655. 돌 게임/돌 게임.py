@@ -1,2 +1,1 @@
-if int(input()) % 2 == 0 : print("CY")
-else : print("SK")
+print("CY" if int(input()) % 2 == 0 else "SK")
